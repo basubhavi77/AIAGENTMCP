@@ -26,4 +26,4 @@ test('signs in and verifies iphone X is added to the cart', async ({ page }) => 
   await expect(cartRows).toContainText([productName]);
   await page.waitForTimeout(20000);
   await expect(page.locator('button.btn-success')).toContainText('Checkout');
-})
+});
